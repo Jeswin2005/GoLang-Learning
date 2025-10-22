@@ -1,0 +1,82 @@
+- pwd                  : prints present working directory
+- whoami               : prints username
+- uname -a             : shows system info
+- man command_name     : opens a manual page with a description of command
+- clear                : clears terminal screen
+- history              : Lists all previously executed commands
+- cd                   : come to home directory
+- cd ..                : come to prev 1 directory
+- cd -                 : comes to previous directory
+- ls                   : list files and directories
+- ls -a                : list all file including hidden file(start with .)
+- mkdir dir_name       : create directory
+- mkdir -p abc/test/demo : creates nested directory at once
+- rmdir dir_name       : remove empty directory
+- rm file.txt          : remove a file
+- rm *.txt             : remove file name ending with .txt
+- cp src dest          : copies file content
+- mv src dest          : moves or renames the file
+- touch file.txt       : create dummy file
+- cat fil.txt          : displays file content
+- echo "text"          : prints text to screen
+- echo "text" >> file.txt : append text to file
+- cat file1 > file2    : overwrite file2 with file1
+- cat file1 >> file2   : append file1 to file2
+- vm filename          : open vim editor
+- nano filename        : open nano text editor
+- head filename        : shows first 10 lines of file
+- head -n 2 file       : shows first 2 lines 
+- tail file            : shows last 10 line
+- tail -n 2 file       : shows last 2 line
+
+- Hardlink and Softlink
+  - ln file1 file2
+  - ln -s file1 file2
+
+- alias demo="command" : create shortcut
+- grep word file       : search for word in file
+- grep -i word file    : search for word in file case insensitive
+- grep -v word file    : displays lines without word
+- grep -r word file    : search for word in all subfolders(recursively)
+- find . -name file    : find file by name
+- find . -type f -size +10M : displays file with size greater than 10 MB
+- find . -mtime -1     : display files edited in last 1 day
+- find . -empty        : display empty files
+- wc filename          : count line,word,character
+- wc -l filename       : count lines only
+- wc -w filename       : count words only
+- wc -c filename       : count characters only
+- sort file            : sort file content alphabetically
+- sort -r filename     : sort reverse
+- sort -n filename     : sort numbers ascending
+- sort -nr filename    : sort numbers in descending
+- awk '{print}' file   :print all columns
+- awk '{print $1, $3}' file : print column 1 and 3
+- awk '$2 > 27 {print $1,$3}' file : prints column 1 and where where column 2 value is > 27
+- top                  : display running process and cpu usage
+- ps                   : show current process running
+- df -h                : show disk usage in human readable format
+- du -sh               : show disk usage of folder
+- free -g              : show RAM usage in GB
+- sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches" : clear unwanted buffer cache
+
+- Compressing:
+  - zip file.zip folder : create zip file
+  - zip -r file.zip folder : compress directory recursively
+  - unzip file.zip : extact zip file
+  - tar -czvf filetar folder : compress folder into .tar.gz
+  - tar -zxvf file.tar : extract .tar file
+
+- Permissions:
+  - read - 4, write - 2, execute - 1
+  - chmod 777 file            : read+write+execute for user group and others
+  - sudo useradd user_name    : create new user
+  - sudo groupname group_name : create group name
+  - chown user file           : change file user
+  - chown :group file         : change file group
+  - chown user:group file     : change file user and group
+  - chmod o+r file            : give read permission to others
+
+- SSH and SCP:
+  - ssh ip(or)username
+  - scp filepath ip(or)username:destpath
