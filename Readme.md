@@ -108,3 +108,12 @@ P - Processor - Logical Processor managing execution queue
 - GOOS=linux GOARCH=amd64 go build -o myapp-linux (build for linux from any os)
 - GOOS=windows GOARCH=amd64 go build -o myapp.exe (build for Windows from any os)
 - GOOS=darwin GOARCH=arm64 go build -o myapp-macos-arm (build for macOS from any os)
+
+## 30-10-2025
+### Topics Covered
+- Build commands and build tags
+- How binaries are executed internal process
+- Packages and modules
+- Types of loader and linker
+- GIT
+

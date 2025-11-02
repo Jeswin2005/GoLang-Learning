@@ -8,6 +8,10 @@ func print(myMap map[int]string) {
 	}
 }
 
+func demo(map1 map[int]string){
+	map1[1] = "mango"
+}
+
 func main() {
 	// Map defining
 
@@ -41,4 +45,13 @@ func main() {
 	} else {
 		fmt.Println("no id 1 present")
 	}
+
+
+	map1 := make(map[int]string)
+	map1[1] = "apple"
+	map1[2] = "banana"
+
+	demo(map1)
+
+	fmt.Println(map1)
 }

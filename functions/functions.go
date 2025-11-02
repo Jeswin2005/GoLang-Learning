@@ -19,6 +19,7 @@ func swap1(a *int, b *int) {
 	*b = temp
 }
 
+
 // 3. function closure
 func Counter() func() int {
 	count := 1
