@@ -1,0 +1,7 @@
+[Unit]
+Description=Run logworker
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/jeswin-pt8024/myagent/hostzip/bin/logworker

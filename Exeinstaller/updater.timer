@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for updater every 2 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2min
+Unit=updater.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
