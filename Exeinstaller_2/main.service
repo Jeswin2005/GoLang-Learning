@@ -1,0 +1,11 @@
+[Unit]
+Description=Main Service
+After=network.target
+
+[Service]
+KillMode=process
+ExecStart=/home/jeswin-pt8024/first-proj/hostzip/bin/main
+ExecStop=/usr/bin/pkill -f logworker
+
+[Install]
+WantedBy=multi-user.target
